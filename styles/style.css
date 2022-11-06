@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Roboto';
+    src:  url('../assets/fonts/Roboto-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: #f5f5f5;
+    background-size: cover;
+    user-select: none;
+}
+
+.main-conteiner{
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons-conteiner {
+    width: auto;
+    height: auto;
+    margin: 50px auto 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.puzzle-conteiner {
+    margin: 5px auto;
+    background-color: rgb(229, 229, 229);
+    outline: 1px ridge rgba(177, 177, 177, .5);
+    position: relative;
+}
+
+.settings-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 15px auto;
+}
+.settings-conteiner>div:first-child{
+    margin-right: 10%;
+}
+
+.game-button{
+    width: auto;
+    height: 40px;
+    margin: 5px;
+    padding: 2px 15px;
+    text-transform: uppercase;
+    background-color: #0b9094;
+    color: rgb(255 255 255);
+    font-size: .9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.game-button:hover{
+    background-color: #06676a;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+}
+.sound-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    border-radius: 5px;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    z-index: 10;
+}
+.sound-button:hover{
+    background-color: rgba(61, 65, 65, 0.1);
+    border-radius: 20%;
+}
+
+.info-conteiner{
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    display: flex;
+}
+.info-conteiner>p:first-child{
+    margin-right: 10%;
+}
+.setting-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item{
+    position: absolute;
+    border: 1px ridge rgba(177, 177, 177, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    transition: all .2s ;
+    cursor: pointer;
+}
+
+.stop-btn-toggle{
+    background-color: #065153;
+}
+.stop-btn-toggle:hover{
+    background-color: #06676a;
+}
+/*
+/*[data-tooltip] {*/
+/*    position: relative; !* Относительное позиционирование *!*/
+/*}*/
+/*[data-tooltip]::after {*/
+/*    content: attr(data-tooltip); !* Выводим текст *!*/
+/*    position: absolute; !* Абсолютное позиционирование *!*/
+/*    width: 300px; !* Ширина подсказки *!*/
+/*    left: 0; top: 0; !* Положение подсказки *!*/
+/*    background: #3989c9; !* Синий цвет фона *!*/
+/*    color: #fff; !* Цвет текста *!*/
+/*    padding: 0.5em; !* Поля вокруг текста *!*/
+/*    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); !* Параметры тени *!*/
+/*    pointer-events: none; !* Подсказка *!*/
+/*    opacity: 0; !* Подсказка невидима *!*/
+/*    transition: 1s; !* Время появления подсказки *!*/
+/*}*/
+/*[data-tooltip]:hover::after {*/
+/*    opacity: 1; !* Показываем подсказку *!*/
+/*    top: 2em; !* Положение подсказки *!*/
+/*}*/
